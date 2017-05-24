@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Today's Quote</title>
+    <style>body {text-align: center} button {text-align: left } table { border: 5px darkslategrey double; margin: 0 auto} </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+    <button><a href="/">Home</a></button>
+    <h1>Here's your quote!</h1>
+    <table>
+        <tr>
+            <td th:text="${quote}"></td>
+        </tr>
+        <tr>
+            <td th:text="${author}"></td>
+        </tr>
+        <tr>
+            <td th:text="${date}"></td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
